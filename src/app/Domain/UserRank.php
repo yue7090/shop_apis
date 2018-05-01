@@ -29,7 +29,7 @@ class UserRank {
             }
         }
         $model = new ModelUserRank();
-        $info = $model->getUserInfo($where);
+        $info = $model->getUserRankInfo($where);
         $rs['info'] = $info;
         return $rs;
     }
@@ -38,23 +38,10 @@ class UserRank {
     {
         // todo 验证用户名 邮箱的唯一性
         $model = new ModelUserRank();
-        $data['password'] = md5($data['password'].$data['ec_salt'] );
-        $data['reg_time'] = strtotime(date("Y-m-d H:i:s"));
-        $data['aite_id'] = '';
-        $data['nick_name'] = '';
-        $data['alias'] = '';
-        $data['msn'] = '';
-        $data['qq'] = '';
-        $data['office_phone'] = '';
-        $data['home_phone'] = '';
-        $data['mobile_phone'] = '';
-        $data['credit_line'] = 0;
-        $data['user_picture'] = '';
-        $data['old_user_picture'] = '';
         return $model->insert($data);
     }
 
-    public function update($user_id, $data)
+    public function update($rank_id, $data)
     {
         $model = new ModelUserRank();
         foreach( $data as $k=> $v )
@@ -64,20 +51,12 @@ class UserRank {
                 unset($data[$k]);
             }
         }
-
-        if(isset($data['password']))
-        {
-            $data['ec_salt'] = rand( 1000, 9999);
-            $data['password'] = md5($data['password'].$data['ec_salt']);
-        }
-
-        $data['last_time'] = date('Y-m-d H:i:s');
-        return $model->update($user_id,$data);
+        return $model->update($rank_id,$data);
     }
 
-    public function delete($user_id)
+    public function delete($rank_id)
     {
         $model = new ModelUserRank();
-        return $model->delete($user_id);
+        return $model->delete($rank_id);
     }
 }

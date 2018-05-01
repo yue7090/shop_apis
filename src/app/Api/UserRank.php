@@ -18,6 +18,24 @@ class UserRank extends Api
             'list' => array(
                 'page' =>array('name'=> 'page', 'type'=> 'int', 'default' => '1', 'require'=> true),
                 'perpage' => array('name' => 'perpage', 'type' => 'int' , 'default'=>\PhalApi\DI()->config->get('comm.perpage'), 'require'=> 'true')
+            ),
+            'info' =>array(
+                'rank_id' => array(
+                    'name' => 'rank_id', 'type' => 'int'
+                ),
+                'rank_name' => array('name'=>'rank_name', 'type' =>'string')
+            ),
+            'add' => array(
+                'rank_name' =>array('name'=>'rank_name', 'type'=>'string','require'=>true),
+                'discount' => array('name'=>'discount', 'type'=>'int', 'require'=> true, 'default'=> 0, 'min' => 0, 'max'=>100, 'desc'=>'折扣')
+            ),
+            'update' => array(
+                'rank_id'=> array('name'=>'rank_id', 'require'=> true, 'type'=> 'int'),
+                'rank_name' => array('name'=>'rank_name', 'type'=>'string'),
+                'discount' => array('name'=>'discount', 'type'=>'int', 'require'=> true, 'default'=> 0, 'min' => 0, 'max'=>100, 'desc'=>'折扣')
+            ),
+            'delete' => array(
+                'rank_id' => array('name'=>'rank_id', 'type'=>'int', 'require'=>true)
             )
         );
     }
@@ -32,64 +50,59 @@ class UserRank extends Api
     
     public function info() 
     {
-        if(empty($this->user_id) && empty($this->email) && empty($this->user_name) && empty($this->mobile_phone))
+        if(empty($this->rank_id) && empty($this->rank_name))
         {
             throw new BadRequestException('请求参数为空', 1);
         }
 
         $where = array(
-            'user_id' => $this->user_id,
-            'email' => $this-> email,
-            'mobile_phone' => $this->mobile_phone,
-            'user_name' => $this->user_name
+            'rank_id' => $this->rank_id,
+            'rank_name' => $this-> rank_name,
         );
         
-        $user = new DomainUser();
+        $rank = new DomainUserRank();
         return array(
-            'user' => $user->getInfo($where)
+            'rank' => $rank->getInfo($where)
         );
     }
 
-    public function regist() 
+    public function add() 
     {
-        $user = new DomainUser();
+        $user = new DomainUserRank();
         $data = array(
-            'user_name' => $this->user_name,
-            'email' => $this->email,
-            'password' => $this->password,
-            'ec_salt' => $this->ec_salt,
+            'rank_name' => $this->rank_name,
+            'discount' => $this->discount
         );
         if( $id = $user->insert($data))
         {
             $rs['id'] = $id;
             return $rs; 
         }else{
-            throw new BadRequestException('注册失败', 1);
+            throw new BadRequestException('添加失败', 1);
         }
     }
 
     public function update()
     {
-        if(empty($this->user_id))
+        if(empty($this->rank_id))
         {
-            throw new BadRequestException('user_id为空', 1);
+            throw new BadRequestException('rank_id', 1);
         }
-        if(empty($this->password) && empty($this->email) && empty($this->user_name))
+        if(empty($this->rank_name) && empty($this->discount))
         {
             throw new BadRequestException('请求参数为空', 1);
         }
-        $user = new DomainUser();
+        $userRank = new DomainUserRank();
         $data =array();
-        $data['password'] = $this->password;
-        $data['email'] = $this->email;
-        $data['user_name'] = $this->user_name;
+        $data['rank_name'] = $this->rank_name;
+        $data['discount'] = $this->discount;
 
-        return $user->update($this->user_id, $data);
+        return $userRank->update($this->rank_id, $data);
     }
 
     public function delete()
     {
-        $user = new DomainUser();
-        return $user->delete($this->user_id);
+        $rank = new DomainUserRank();
+        return $rank->delete($this->rank_id);
     }
 }

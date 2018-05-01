@@ -196,3 +196,26 @@ Stack trace:
 #3 /home/wwwroot/plana/apis/public/index.php(9): PhalApi\PhalApi->response()
 #4 {main}
   thrown in /home/wwwroot/plana/apis/src/app/Domain/UserRank.php on line 12
+[02-May-2018 02:02:29 Asia/Shanghai] PHP Fatal error:  Uncaught Error: Class 'App\Domain\Brank' not found in /home/wwwroot/plana/apis/src/app/Api/Brand.php:48
+Stack trace:
+#0 [internal function]: App\Api\Brand->list()
+#1 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/PhalApi.php(49): call_user_func(Array)
+#2 /home/wwwroot/plana/apis/public/index.php(9): PhalApi\PhalApi->response()
+#3 {main}
+  thrown in /home/wwwroot/plana/apis/src/app/Api/Brand.php on line 48
+[02-May-2018 02:05:25 Asia/Shanghai] PHP Fatal error:  Uncaught Error: Call to undefined method App\Model\Brand::getUserInfo() in /home/wwwroot/plana/apis/src/app/Domain/Brand.php:32
+Stack trace:
+#0 /home/wwwroot/plana/apis/src/app/Api/Brand.php(67): App\Domain\Brand->getInfo(Array)
+#1 [internal function]: App\Api\Brand->info()
+#2 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/PhalApi.php(49): call_user_func(Array)
+#3 /home/wwwroot/plana/apis/public/index.php(9): PhalApi\PhalApi->response()
+#4 {main}
+  thrown in /home/wwwroot/plana/apis/src/app/Domain/Brand.php on line 32
+[02-May-2018 02:34:13 Asia/Shanghai] PHP Notice:  Undefined variable: user in /home/wwwroot/plana/apis/src/app/Api/Brand.php on line 110
+[02-May-2018 02:34:13 Asia/Shanghai] PHP Fatal error:  Uncaught Error: Call to a member function delete() on null in /home/wwwroot/plana/apis/src/app/Api/Brand.php:110
+Stack trace:
+#0 [internal function]: App\Api\Brand->delete()
+#1 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/PhalApi.php(49): call_user_func(Array)
+#2 /home/wwwroot/plana/apis/public/index.php(9): PhalApi\PhalApi->response()
+#3 {main}
+  thrown in /home/wwwroot/plana/apis/src/app/Api/Brand.php on line 110
