@@ -1,0 +1,204 @@
+2018-04-30 20:31:38|ERROR|App.User.regist|PDOException: Data truncated for column 'reg_time' at row 1 in /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php:264
+Stack trace:
+#0 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(341): NotORM_Result->query('INSERT INTO pla...', Array)
+#1 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(358): NotORM_Result->insert_multi(Array)
+#2 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/Model/NotORMModel.php(42): NotORM_Result->insert(Array)
+#3 /home/wwwroot/plana/apis/src/app/Domain/User.php(35): PhalApi\Model\NotORMModel->insert(Array)
+#4 /home/wwwroot/plana/apis/src/app/Api/User.php(75): App\Domain\User->insert(Array)
+#5 [internal function]: App\Api\User->regist()
+#6 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/PhalApi.php(49): call_user_func(Array)
+#7 /home/wwwroot/plana/apis/public/index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2018-04-30 20:33:31|ERROR|App.User.regist|PDOException: Field 'aite_id' doesn't have a default value in /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php:264
+Stack trace:
+#0 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(341): NotORM_Result->query('INSERT INTO pla...', Array)
+#1 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(358): NotORM_Result->insert_multi(Array)
+#2 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/Model/NotORMModel.php(42): NotORM_Result->insert(Array)
+#3 /home/wwwroot/plana/apis/src/app/Domain/User.php(35): PhalApi\Model\NotORMModel->insert(Array)
+#4 /home/wwwroot/plana/apis/src/app/Api/User.php(75): App\Domain\User->insert(Array)
+#5 [internal function]: App\Api\User->regist()
+#6 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/PhalApi.php(49): call_user_func(Array)
+#7 /home/wwwroot/plana/apis/public/index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2018-04-30 20:34:24|ERROR|App.User.regist|PDOException: Field 'aite_id' doesn't have a default value in /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php:264
+Stack trace:
+#0 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(341): NotORM_Result->query('INSERT INTO pla...', Array)
+#1 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(358): NotORM_Result->insert_multi(Array)
+#2 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/Model/NotORMModel.php(42): NotORM_Result->insert(Array)
+#3 /home/wwwroot/plana/apis/src/app/Domain/User.php(35): PhalApi\Model\NotORMModel->insert(Array)
+#4 /home/wwwroot/plana/apis/src/app/Api/User.php(75): App\Domain\User->insert(Array)
+#5 [internal function]: App\Api\User->regist()
+#6 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/PhalApi.php(49): call_user_func(Array)
+#7 /home/wwwroot/plana/apis/public/index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2018-04-30 20:36:05|ERROR|App.User.regist|PDOException: Field 'nick_name' doesn't have a default value in /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php:264
+Stack trace:
+#0 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(341): NotORM_Result->query('INSERT INTO pla...', Array)
+#1 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(358): NotORM_Result->insert_multi(Array)
+#2 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/Model/NotORMModel.php(42): NotORM_Result->insert(Array)
+#3 /home/wwwroot/plana/apis/src/app/Domain/User.php(36): PhalApi\Model\NotORMModel->insert(Array)
+#4 /home/wwwroot/plana/apis/src/app/Api/User.php(75): App\Domain\User->insert(Array)
+#5 [internal function]: App\Api\User->regist()
+#6 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/PhalApi.php(49): call_user_func(Array)
+#7 /home/wwwroot/plana/apis/public/index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2018-04-30 20:36:23|ERROR|App.User.regist|PDOException: Field 'alias' doesn't have a default value in /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php:264
+Stack trace:
+#0 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(341): NotORM_Result->query('INSERT INTO pla...', Array)
+#1 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(358): NotORM_Result->insert_multi(Array)
+#2 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/Model/NotORMModel.php(42): NotORM_Result->insert(Array)
+#3 /home/wwwroot/plana/apis/src/app/Domain/User.php(37): PhalApi\Model\NotORMModel->insert(Array)
+#4 /home/wwwroot/plana/apis/src/app/Api/User.php(75): App\Domain\User->insert(Array)
+#5 [internal function]: App\Api\User->regist()
+#6 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/PhalApi.php(49): call_user_func(Array)
+#7 /home/wwwroot/plana/apis/public/index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2018-04-30 20:37:34|ERROR|App.User.regist|PDOException: Field 'msn' doesn't have a default value in /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php:264
+Stack trace:
+#0 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(341): NotORM_Result->query('INSERT INTO pla...', Array)
+#1 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(358): NotORM_Result->insert_multi(Array)
+#2 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/Model/NotORMModel.php(42): NotORM_Result->insert(Array)
+#3 /home/wwwroot/plana/apis/src/app/Domain/User.php(38): PhalApi\Model\NotORMModel->insert(Array)
+#4 /home/wwwroot/plana/apis/src/app/Api/User.php(75): App\Domain\User->insert(Array)
+#5 [internal function]: App\Api\User->regist()
+#6 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/PhalApi.php(49): call_user_func(Array)
+#7 /home/wwwroot/plana/apis/public/index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2018-04-30 20:37:48|ERROR|App.User.regist|PDOException: Field 'qq' doesn't have a default value in /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php:264
+Stack trace:
+#0 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(341): NotORM_Result->query('INSERT INTO pla...', Array)
+#1 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(358): NotORM_Result->insert_multi(Array)
+#2 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/Model/NotORMModel.php(42): NotORM_Result->insert(Array)
+#3 /home/wwwroot/plana/apis/src/app/Domain/User.php(39): PhalApi\Model\NotORMModel->insert(Array)
+#4 /home/wwwroot/plana/apis/src/app/Api/User.php(75): App\Domain\User->insert(Array)
+#5 [internal function]: App\Api\User->regist()
+#6 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/PhalApi.php(49): call_user_func(Array)
+#7 /home/wwwroot/plana/apis/public/index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2018-04-30 20:38:07|ERROR|App.User.regist|PDOException: Field 'office_phone' doesn't have a default value in /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php:264
+Stack trace:
+#0 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(341): NotORM_Result->query('INSERT INTO pla...', Array)
+#1 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(358): NotORM_Result->insert_multi(Array)
+#2 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/Model/NotORMModel.php(42): NotORM_Result->insert(Array)
+#3 /home/wwwroot/plana/apis/src/app/Domain/User.php(40): PhalApi\Model\NotORMModel->insert(Array)
+#4 /home/wwwroot/plana/apis/src/app/Api/User.php(75): App\Domain\User->insert(Array)
+#5 [internal function]: App\Api\User->regist()
+#6 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/PhalApi.php(49): call_user_func(Array)
+#7 /home/wwwroot/plana/apis/public/index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2018-04-30 20:38:21|ERROR|App.User.regist|PDOException: Field 'home_phone' doesn't have a default value in /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php:264
+Stack trace:
+#0 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(341): NotORM_Result->query('INSERT INTO pla...', Array)
+#1 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(358): NotORM_Result->insert_multi(Array)
+#2 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/Model/NotORMModel.php(42): NotORM_Result->insert(Array)
+#3 /home/wwwroot/plana/apis/src/app/Domain/User.php(41): PhalApi\Model\NotORMModel->insert(Array)
+#4 /home/wwwroot/plana/apis/src/app/Api/User.php(75): App\Domain\User->insert(Array)
+#5 [internal function]: App\Api\User->regist()
+#6 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/PhalApi.php(49): call_user_func(Array)
+#7 /home/wwwroot/plana/apis/public/index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2018-04-30 20:38:36|ERROR|App.User.regist|PDOException: Field 'mobile_phone' doesn't have a default value in /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php:264
+Stack trace:
+#0 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(341): NotORM_Result->query('INSERT INTO pla...', Array)
+#1 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(358): NotORM_Result->insert_multi(Array)
+#2 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/Model/NotORMModel.php(42): NotORM_Result->insert(Array)
+#3 /home/wwwroot/plana/apis/src/app/Domain/User.php(42): PhalApi\Model\NotORMModel->insert(Array)
+#4 /home/wwwroot/plana/apis/src/app/Api/User.php(75): App\Domain\User->insert(Array)
+#5 [internal function]: App\Api\User->regist()
+#6 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/PhalApi.php(49): call_user_func(Array)
+#7 /home/wwwroot/plana/apis/public/index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2018-04-30 20:38:53|ERROR|App.User.regist|PDOException: Field 'credit_line' doesn't have a default value in /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php:264
+Stack trace:
+#0 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(341): NotORM_Result->query('INSERT INTO pla...', Array)
+#1 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(358): NotORM_Result->insert_multi(Array)
+#2 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/Model/NotORMModel.php(42): NotORM_Result->insert(Array)
+#3 /home/wwwroot/plana/apis/src/app/Domain/User.php(43): PhalApi\Model\NotORMModel->insert(Array)
+#4 /home/wwwroot/plana/apis/src/app/Api/User.php(75): App\Domain\User->insert(Array)
+#5 [internal function]: App\Api\User->regist()
+#6 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/PhalApi.php(49): call_user_func(Array)
+#7 /home/wwwroot/plana/apis/public/index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2018-04-30 20:39:09|ERROR|App.User.regist|PDOException: Incorrect decimal value: '' for column 'credit_line' at row 1 in /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php:264
+Stack trace:
+#0 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(341): NotORM_Result->query('INSERT INTO pla...', Array)
+#1 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(358): NotORM_Result->insert_multi(Array)
+#2 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/Model/NotORMModel.php(42): NotORM_Result->insert(Array)
+#3 /home/wwwroot/plana/apis/src/app/Domain/User.php(44): PhalApi\Model\NotORMModel->insert(Array)
+#4 /home/wwwroot/plana/apis/src/app/Api/User.php(75): App\Domain\User->insert(Array)
+#5 [internal function]: App\Api\User->regist()
+#6 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/PhalApi.php(49): call_user_func(Array)
+#7 /home/wwwroot/plana/apis/public/index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2018-04-30 20:39:50|ERROR|App.User.regist|PDOException: Field 'user_picture' doesn't have a default value in /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php:264
+Stack trace:
+#0 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(341): NotORM_Result->query('INSERT INTO pla...', Array)
+#1 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(358): NotORM_Result->insert_multi(Array)
+#2 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/Model/NotORMModel.php(42): NotORM_Result->insert(Array)
+#3 /home/wwwroot/plana/apis/src/app/Domain/User.php(44): PhalApi\Model\NotORMModel->insert(Array)
+#4 /home/wwwroot/plana/apis/src/app/Api/User.php(75): App\Domain\User->insert(Array)
+#5 [internal function]: App\Api\User->regist()
+#6 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/PhalApi.php(49): call_user_func(Array)
+#7 /home/wwwroot/plana/apis/public/index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2018-04-30 20:40:07|ERROR|App.User.regist|PDOException: Field 'old_user_picture' doesn't have a default value in /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php:264
+Stack trace:
+#0 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(341): NotORM_Result->query('INSERT INTO pla...', Array)
+#1 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(358): NotORM_Result->insert_multi(Array)
+#2 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/Model/NotORMModel.php(42): NotORM_Result->insert(Array)
+#3 /home/wwwroot/plana/apis/src/app/Domain/User.php(45): PhalApi\Model\NotORMModel->insert(Array)
+#4 /home/wwwroot/plana/apis/src/app/Api/User.php(75): App\Domain\User->insert(Array)
+#5 [internal function]: App\Api\User->regist()
+#6 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/PhalApi.php(49): call_user_func(Array)
+#7 /home/wwwroot/plana/apis/public/index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2018-04-30 21:25:34|ERROR|App.User.update|PDOException: Unknown column 'id' in 'where clause' in /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php:264
+Stack trace:
+#0 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(412): NotORM_Result->query('UPDATE plana_us...', Array)
+#1 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/Model/NotORMModel.php(53): NotORM_Result->update(Array)
+#2 /home/wwwroot/plana/apis/src/app/Domain/User.php(75): PhalApi\Model\NotORMModel->update(NULL, Array)
+#3 /home/wwwroot/plana/apis/src/app/Api/User.php(105): App\Domain\User->update(Array)
+#4 [internal function]: App\Api\User->update()
+#5 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/PhalApi.php(49): call_user_func(Array)
+#6 /home/wwwroot/plana/apis/public/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2018-04-30 21:27:23|ERROR|App.User.update|PDOException: Unknown column 'id' in 'where clause' in /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php:264
+Stack trace:
+#0 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(412): NotORM_Result->query('UPDATE plana_us...', Array)
+#1 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/Model/NotORMModel.php(53): NotORM_Result->update(Array)
+#2 /home/wwwroot/plana/apis/src/app/Domain/User.php(73): PhalApi\Model\NotORMModel->update(NULL, Array)
+#3 /home/wwwroot/plana/apis/src/app/Api/User.php(105): App\Domain\User->update(NULL, Array)
+#4 [internal function]: App\Api\User->update()
+#5 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/PhalApi.php(49): call_user_func(Array)
+#6 /home/wwwroot/plana/apis/public/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2018-04-30 21:27:47|ERROR|App.User.update|PDOException: Unknown column 'id' in 'where clause' in /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php:264
+Stack trace:
+#0 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(412): NotORM_Result->query('UPDATE plana_us...', Array)
+#1 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/Model/NotORMModel.php(53): NotORM_Result->update(Array)
+#2 /home/wwwroot/plana/apis/src/app/Domain/User.php(73): PhalApi\Model\NotORMModel->update(1, Array)
+#3 /home/wwwroot/plana/apis/src/app/Api/User.php(105): App\Domain\User->update(1, Array)
+#4 [internal function]: App\Api\User->update()
+#5 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/PhalApi.php(49): call_user_func(Array)
+#6 /home/wwwroot/plana/apis/public/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2018-04-30 21:39:56|ERROR|App.User.update|PDOException: Unknown column 'id' in 'where clause' in /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php:264
+Stack trace:
+#0 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(412): NotORM_Result->query('UPDATE plana_us...', Array)
+#1 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/Model/NotORMModel.php(53): NotORM_Result->update(Array)
+#2 /home/wwwroot/plana/apis/src/app/Domain/User.php(73): PhalApi\Model\NotORMModel->update(1, Array)
+#3 /home/wwwroot/plana/apis/src/app/Api/User.php(105): App\Domain\User->update(1, Array)
+#4 [internal function]: App\Api\User->update()
+#5 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/PhalApi.php(49): call_user_func(Array)
+#6 /home/wwwroot/plana/apis/public/index.php(9): PhalApi\PhalApi->response()
+#7 {main}
+2018-04-30 21:48:49|ERROR|App.User.update|PDOException: Unknown column 'password ' in 'field list' in /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php:264
+Stack trace:
+#0 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(412): NotORM_Result->query('UPDATE plana_us...', Array)
+#1 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/Model/NotORMModel.php(53): NotORM_Result->update(Array)
+#2 /home/wwwroot/plana/apis/src/app/Domain/User.php(73): PhalApi\Model\NotORMModel->update(1, Array)
+#3 /home/wwwroot/plana/apis/src/app/Api/User.php(105): App\Domain\User->update(1, Array)
+#4 [internal function]: App\Api\User->update()
+#5 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/PhalApi.php(49): call_user_func(Array)
+#6 /home/wwwroot/plana/apis/public/index.php(9): PhalApi\PhalApi->response()
+#7 {main}

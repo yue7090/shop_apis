@@ -1,0 +1,11 @@
+2018-05-01 22:31:36|ERROR|App.UserRank.list|PDOException: Table 'myshop.plana_rank' doesn't exist in /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php:264
+Stack trace:
+#0 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(813): NotORM_Result->query('SELECT * FROM p...', Array)
+#1 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(898): NotORM_Result->execute()
+#2 /home/wwwroot/plana/apis/src/app/Model/UserRank.php(23): NotORM_Result->fetchAll()
+#3 /home/wwwroot/plana/apis/src/app/Domain/UserRank.php(12): App\Model\UserRank->getUserRankItems(1, 10)
+#4 /home/wwwroot/plana/apis/src/app/Api/UserRank.php(29): App\Domain\UserRank->getList(1, 10)
+#5 [internal function]: App\Api\UserRank->list()
+#6 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/PhalApi.php(49): call_user_func(Array)
+#7 /home/wwwroot/plana/apis/public/index.php(9): PhalApi\PhalApi->response()
+#8 {main}

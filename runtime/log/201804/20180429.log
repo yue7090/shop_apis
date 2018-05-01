@@ -1,0 +1,44 @@
+2018-04-29 22:31:36|ERROR|App.User.list|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-100,100' at line 1 in /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php:264
+Stack trace:
+#0 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(813): NotORM_Result->query('SELECT * FROM p...', Array)
+#1 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(898): NotORM_Result->execute()
+#2 /home/wwwroot/plana/apis/src/app/Model/User.php(18): NotORM_Result->fetchAll()
+#3 /home/wwwroot/plana/apis/src/app/Domain/User.php(12): App\Model\User->getUserItems('0', '100')
+#4 /home/wwwroot/plana/apis/src/app/Api/User.php(18): App\Domain\User->getList('0', '100')
+#5 [internal function]: App\Api\User->list()
+#6 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/PhalApi.php(49): call_user_func(Array)
+#7 /home/wwwroot/plana/apis/public/index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2018-04-29 22:45:28|ERROR|App.User.list|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-100,100' at line 1 in /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php:264
+Stack trace:
+#0 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(813): NotORM_Result->query('SELECT * FROM p...', Array)
+#1 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(898): NotORM_Result->execute()
+#2 /home/wwwroot/plana/apis/src/app/Model/User.php(18): NotORM_Result->fetchAll()
+#3 /home/wwwroot/plana/apis/src/app/Domain/User.php(12): App\Model\User->getUserItems(NULL, '100')
+#4 /home/wwwroot/plana/apis/src/app/Api/User.php(25): App\Domain\User->getList(NULL, '100')
+#5 [internal function]: App\Api\User->list()
+#6 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/PhalApi.php(49): call_user_func(Array)
+#7 /home/wwwroot/plana/apis/public/index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2018-04-29 22:45:41|ERROR|App.User.list|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-100,100' at line 1 in /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php:264
+Stack trace:
+#0 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(813): NotORM_Result->query('SELECT * FROM p...', Array)
+#1 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(898): NotORM_Result->execute()
+#2 /home/wwwroot/plana/apis/src/app/Model/User.php(18): NotORM_Result->fetchAll()
+#3 /home/wwwroot/plana/apis/src/app/Domain/User.php(12): App\Model\User->getUserItems(NULL, '100')
+#4 /home/wwwroot/plana/apis/src/app/Api/User.php(25): App\Domain\User->getList(NULL, '100')
+#5 [internal function]: App\Api\User->list()
+#6 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/PhalApi.php(49): call_user_func(Array)
+#7 /home/wwwroot/plana/apis/public/index.php(9): PhalApi\PhalApi->response()
+#8 {main}
+2018-04-29 22:45:48|ERROR|App.User.list|PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-100,100' at line 1 in /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php:264
+Stack trace:
+#0 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(813): NotORM_Result->query('SELECT * FROM p...', Array)
+#1 /home/wwwroot/plana/apis/vendor/phalapi/notorm/src/NotORM/Result.php(898): NotORM_Result->execute()
+#2 /home/wwwroot/plana/apis/src/app/Model/User.php(18): NotORM_Result->fetchAll()
+#3 /home/wwwroot/plana/apis/src/app/Domain/User.php(12): App\Model\User->getUserItems(NULL, '100')
+#4 /home/wwwroot/plana/apis/src/app/Api/User.php(25): App\Domain\User->getList(NULL, '100')
+#5 [internal function]: App\Api\User->list()
+#6 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/PhalApi.php(49): call_user_func(Array)
+#7 /home/wwwroot/plana/apis/public/index.php(9): PhalApi\PhalApi->response()
+#8 {main}
