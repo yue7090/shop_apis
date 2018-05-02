@@ -4,34 +4,34 @@ namespace App\Model;
 use PhalApi\Model\NotORMModel as NotORM;
 
 
-class Region extends NotORM {
+class ProductCategory extends NotORM {
 
     protected function getTableName($id) {
-        return 'region';
+        return 'category';
     }
 
     protected function getTableKey($table)
     {
-        return 'region_id';
+        return 'cat_id';
     }
 
 
-    public function getRegionItems($page, $perpage) {
+    public function getProductCategoryItems($page, $perpage) {
         return $this->getORM()
             ->select('*')
-            ->order('region_id DESC')
+            ->order('cat_id DESC')
             ->limit(($page - 1) * $perpage, $perpage)
             ->fetchAll();
     }
 
-    public function getRegionTotal() {
+    public function getProductCategoryTotal() {
         $total = $this->getORM()
-            ->count('region_id');
+            ->count('cat_id');
 
         return intval($total);
     }
 
-    public function getRegionInfo($where)
+    public function getProductCategoryInfo($where)
     {   
         return $this->getORM()
         ->where($where)

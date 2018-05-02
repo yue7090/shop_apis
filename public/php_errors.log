@@ -219,3 +219,17 @@ Stack trace:
 #2 /home/wwwroot/plana/apis/public/index.php(9): PhalApi\PhalApi->response()
 #3 {main}
   thrown in /home/wwwroot/plana/apis/src/app/Api/Brand.php on line 110
+[02-May-2018 09:06:50 Asia/Shanghai] PHP Fatal error:  Uncaught Error: Class 'App\Api\DomainWarehouse' not found in /home/wwwroot/plana/apis/src/app/Api/ProductCategory.php:64
+Stack trace:
+#0 [internal function]: App\Api\ProductCategory->info()
+#1 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/PhalApi.php(49): call_user_func(Array)
+#2 /home/wwwroot/plana/apis/public/index.php(9): PhalApi\PhalApi->response()
+#3 {main}
+  thrown in /home/wwwroot/plana/apis/src/app/Api/ProductCategory.php on line 64
+[02-May-2018 10:17:37 Asia/Shanghai] PHP Fatal error:  Uncaught Error: Class 'App\Domain\SellerCategoryCategory' not found in /home/wwwroot/plana/apis/src/app/Api/SellerCategory.php:46
+Stack trace:
+#0 [internal function]: App\Api\SellerCategory->list()
+#1 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/PhalApi.php(49): call_user_func(Array)
+#2 /home/wwwroot/plana/apis/public/index.php(9): PhalApi\PhalApi->response()
+#3 {main}
+  thrown in /home/wwwroot/plana/apis/src/app/Api/SellerCategory.php on line 46
