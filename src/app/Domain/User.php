@@ -80,4 +80,27 @@ class User {
         $model = new ModelUser();
         return $model->delete($user_id);
     }
+
+    public function login($user_name, $password)
+    {
+        /**
+        * 校验用户名和密码
+        */
+
+        $model = new ModelUser();
+        $user = $model->getUserInfo(array('user_name'=>trim($user_name)));
+        if($user)
+        {
+            $ec_salt = $user['ec_salt'];
+            if(md5($password.$ec_salt) == $user['password'])
+            {
+                //存入session
+                return $user;
+            }else{
+                return false;
+            }
+        }else{
+            return false;
+        }
+    }
 }

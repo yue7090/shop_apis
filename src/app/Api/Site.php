@@ -34,5 +34,10 @@ class Site extends Api {
             'version' => PHALAPI_VERSION,
             'time' => $_SERVER['REQUEST_TIME'],
         );
-	}
+    }
+    
+    public function info()
+    {
+        phpinfo();
+    }
 }

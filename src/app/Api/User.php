@@ -39,9 +39,42 @@ class User extends Api
             ),
             'delete' => array(
                 'user_id' => array('name' => 'user_id', 'type' => 'int', 'require' => true)
+            ),
+            'login' => array(
+                'user_name' => array('name'=>'user_name', 'type'=>'string', 'require'=>true),
+                'password' => array('name'=>'password', 'type'=>'string', 'require'=>true)
             )
         );
     }
+    /** 
+    *  发送验证码
+    */
+    public function sendCode()
+    {
+
+    }
+
+    /**
+    *
+    *  用户登陆
+    *
+     */
+     public function login()
+     {
+        $user = new DomainUser();
+        // return array(
+        //     $user->login($this->user_name, $this->password)
+        // );
+        $user = $user->login($this->user_name, $this->password);
+        if($user)
+        {
+            return array(
+                'user' => $user
+            );
+        }else{
+            throw new BadRequestException('登陆失败', 1);
+        }
+     }
 
     public function list() 
     {
