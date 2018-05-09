@@ -233,3 +233,20 @@ Stack trace:
 #2 /home/wwwroot/plana/apis/public/index.php(9): PhalApi\PhalApi->response()
 #3 {main}
   thrown in /home/wwwroot/plana/apis/src/app/Api/SellerCategory.php on line 46
+[08-May-2018 17:33:17 Asia/Shanghai] PHP Warning:  get_headers() expects at least 1 parameter, 0 given in /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/Api.php on line 48
+[08-May-2018 17:34:13 Asia/Shanghai] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/Api.php:48
+Stack trace:
+#0 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/ApiFactory.php(63): PhalApi\Api->__construct()
+#1 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/PhalApi.php(47): PhalApi\ApiFactory::generateService()
+#2 /home/wwwroot/plana/apis/public/index.php(9): PhalApi\PhalApi->response()
+#3 {main}
+  thrown in /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/Api.php on line 48
+[08-May-2018 17:51:48 Asia/Shanghai] PHP Notice:  Array to string conversion in /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/Api.php on line 52
+[08-May-2018 17:52:06 Asia/Shanghai] PHP Notice:  Array to string conversion in /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/Api.php on line 52
+[08-May-2018 18:00:08 Asia/Shanghai] PHP Fatal error:  Uncaught Error: Class 'PhalApi\BadRequestException' not found in /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/Api.php:61
+Stack trace:
+#0 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/ApiFactory.php(63): PhalApi\Api->__construct()
+#1 /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/PhalApi.php(47): PhalApi\ApiFactory::generateService()
+#2 /home/wwwroot/plana/apis/public/index.php(9): PhalApi\PhalApi->response()
+#3 {main}
+  thrown in /home/wwwroot/plana/apis/vendor/phalapi/kernal/src/Api.php on line 61

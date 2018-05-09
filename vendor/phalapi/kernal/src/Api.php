@@ -2,6 +2,7 @@
 namespace PhalApi;
 
 use PhalApi\Exception\InternalServerErrorException;
+use PhalApi\Exception\BadRequestException;
 
 /**
  * Api 接口服务基类
@@ -38,6 +39,31 @@ use PhalApi\Exception\InternalServerErrorException;
  */
 
 class Api {
+
+    /**
+     * 构造函数
+     */
+    public function __construct()
+    {
+        // echo '<pre>';
+        // var_dump($_SERVER);
+        // die;
+        $di = DI();
+        $apiGateWay = $di->config->get('app.apiGateWay.server', array());
+        // echo $apiGateWay;
+        // var_dump($_SERVER['REMOTE_ADDR'] != $apiGateWay);
+        // die;
+        if($_SERVER['REMOTE_ADDR'] != $apiGateWay)
+        {
+            // return false;
+            // die;
+            // echo 1;
+            // die;
+            throw new BadRequestException('请求错误,无效请求来源', 1);
+            die;
+        }
+    }
+
 
     /**
      * @var boolean $__apiIsServiceWhitelist 是否为白名单服务
